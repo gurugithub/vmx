@@ -10,12 +10,7 @@ var modelName = "sapphire2";
 
 var oHttpRequest = new XMLHttpRequest();
 //
-//var https = require('https');
-//var arDroneConstants = require('ar-drone/lib/constants');
-//var arDrone = require('ar-drone');
-//var client = arDrone.createClient();
-//var exiting = false;
-//var droneId;
+
 
 function getBase64Image(img) {
     // Create an empty canvas element
@@ -86,9 +81,7 @@ $vmx.init = function () {
         var postBody = '{"id": "t1","timestamp": 1424815830730,"category": "Drone Ticket: ' + new Date() + '","geoCode": "37.3956647, 37.3989862","waypointId": "wp1","score": 93,"droneId": "d1","image":"'+imgBase64+'"}';
         oHttpRequest.send(postBody);
         
-        // 0.5
-        client.animateLeds(2, 10, 10);
-        // 0.5
+
     }
 
 
